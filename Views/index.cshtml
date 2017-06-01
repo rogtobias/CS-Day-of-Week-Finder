@@ -1,0 +1,23 @@
+@{
+Layout = "Shared/_Layout.cshtml";
+}
+
+<div class="container">
+  <form action="/result" method="post">
+    <label for="month">Enter Month: </label>
+    <input type="number" name="month">
+    <br>
+    <label for="day">Enter Day: </label>
+    <input type="number" name="day">
+    <br>
+    <label for="year">Enter Year: </label>
+    <input type="number" name="year">
+
+    <button type="submit" name="button">Submit</button>
+  </form>
+
+  @if(Model != null)
+  {
+    <h3>Day of the week is: @Model.GetDayOfTheWeek()</h3>
+  }
+</div>
