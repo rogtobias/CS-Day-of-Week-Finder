@@ -6,7 +6,7 @@ using Nancy.ViewEngines.Razor;
 using System.Collections.Generic;
 
 
-namespace Calander.Objects
+namespace Calender.Objects
 {
   public class Startup
   {
